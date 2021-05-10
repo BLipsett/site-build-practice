@@ -1,0 +1,105 @@
+:root {
+  --theme-primary: #c17e7e;
+  --theme-secondary: #d9e8eb;
+  --theme-purple: #594c70;
+}
+
+/* header style from follow along exercise  */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--theme-secondary);
+  align-items: center;
+  padding: 20px 10%;
+}
+
+header li,
+a {
+  color: var(--theme-purple);
+}
+.day-logo {
+  cursor: pointer;
+}
+
+nav li {
+  list-style: none;
+}
+
+.nav-links {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 4px;
+  color: var(--theme-purple);
+}
+
+header button {
+  border-radius: 25px;
+  border: none;
+  padding: 0 15px;
+  background-color: #594c70d6;
+  color: rgb(245, 241, 241);
+}
+
+/* end of new header instead of nav bar */
+
+.header-bar {
+  background-color: white;
+  color: var(--theme-purple);
+}
+
+.hero-section {
+  background-color: var(--theme-primary);
+  height: 70vh;
+  color: white;
+}
+
+.paragraph-section {
+  background-color: var(--theme-secondary);
+  height: 30vh;
+  transition: color 2s;
+}
+
+.card1 {
+}
+
+.card1,
+.card3 {
+  height: 12rem;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid var(--theme-purple);
+}
+
+.hero-section .vis-word {
+  color: var(--theme-purple);
+}
+
+.card1:hover {
+  transition: color 2s;
+  color: var(--theme-purple);
+}
+
+.card2 {
+  height: 15rem;
+  color: white;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+.card2:hover,
+.card3:hover {
+  transition: color 2s;
+  color: var(--theme-purple);
+}
+
+.face {
+  color: var(--theme-purple);
+}
+.face:hover {
+  color: white;
+}
