@@ -8,7 +8,7 @@
 
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   background-color: var(--theme-secondary);
   align-items: center;
   padding: 20px 10%;
@@ -19,11 +19,17 @@ a {
   color: var(--theme-purple);
 }
 .day-logo {
+  margin-right: auto;
   cursor: pointer;
 }
 
 nav li {
   list-style: none;
+}
+
+ul li:nth-child(2) {
+  border-left: 1px solid var(--theme-purple);
+  border-right: 1px solid var(--theme-purple);
 }
 
 .nav-links {
@@ -43,6 +49,7 @@ header button {
   padding: 0 15px;
   background-color: #594c70d6;
   color: rgb(245, 241, 241);
+  margin-left: 20px;
 }
 
 /* end of new header instead of nav bar */
@@ -52,8 +59,11 @@ header button {
   color: var(--theme-purple);
 }
 
-.hero-section {
+.bg-theme {
   background-color: var(--theme-primary);
+}
+
+.hero-section {
   height: 70vh;
   color: white;
 }
